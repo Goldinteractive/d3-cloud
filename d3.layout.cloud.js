@@ -54,8 +54,8 @@
           // don't ask me what am I doing here but it seems to work!
           var minX = -d.xQuadrant > 0 ? 0.5 : 0,
             minY = d.yQuadrant > 0 ? 0.5 : 0,
-            xOffset = (Math.cos(45 * Math.PI / 180) - minX) / (1.1 - minX),
-            yOffset = (Math.sin(45 * Math.PI / 180) - minY) / (1.1 - minY);
+            xOffset = (Math.cos(45 * Math.PI / 180) - minX) / (1 - minX),
+            yOffset = (Math.sin(45 * Math.PI / 180) - minY) / (1 - minY);
 
           d.x = (size[0] * (xOffset + 0.5)) >> 1;
           d.y = (size[1] * (yOffset + 0.5)) >> 1;
